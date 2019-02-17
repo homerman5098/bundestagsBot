@@ -9,7 +9,7 @@ import ssl
 from discord.utils import get
 import os
 
-#test
+#testt
 
 data = handleJson.readjson('C:/server/settings/tokens.json')
 TOKEN = data['TOKENS']['umfrageBot']
