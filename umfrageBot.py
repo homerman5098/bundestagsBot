@@ -69,7 +69,7 @@ async def on_message(message):
             await message.channel.send(embed=embed)
         else:
             print((str(datetime.datetime.now())[:-7]) + prefix + str(message.author) + ' used ' + message.content)
-            await message.channel.send(content='Please use #💻bot-commands ')
+            await message.channel.send(content='Please use <#533005337482100736>')
 
 
     if message.content == '>help':
