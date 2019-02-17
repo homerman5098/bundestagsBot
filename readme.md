@@ -32,7 +32,7 @@ Liste der verfügbaren Umfragen.
 ```python
 >warn @user
 ```
-Warnt den erwähnten User und fügt ihm die Rolle "ErsteVerwarnung hinzu"
+Warnt den erwähnten User und fügt ihm die Rolle "ErsteVerwarnung" hinzu.
 <hr>
 <br>
 
