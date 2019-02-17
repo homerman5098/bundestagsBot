@@ -73,9 +73,14 @@ async def on_message(message):
 
 
     if message.content == '>help':
-        print((str(datetime.datetime.now())[:-7]) + prefix + str(message.author) + ' used ' + message.content)
-        embed = helpembed()
-        await message.channel.send(embed=embed)
+        if message.channel.id == 533005337482100736:
+            print((str(datetime.datetime.now())[:-7]) + prefix + str(message.author) + ' used ' + message.content)
+            embed = helpembed()
+            await message.channel.send(embed=embed)
+        else:
+            print((str(datetime.datetime.now())[:-7]) + prefix + str(message.author) + ' used ' + message.content)
+            await message.channel.send(content='Please use <#533005337482100736>')
+        
     if str(message.content).startswith('+warn'):
 
         for role in message.author.roles:
