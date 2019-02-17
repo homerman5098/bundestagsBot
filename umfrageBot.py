@@ -79,7 +79,8 @@ async def on_message(message):
             await message.channel.send(embed=embed)
         else:
             print((str(datetime.datetime.now())[:-7]) + prefix + str(message.author) + ' used ' + message.content)
-            await message.channel.send(content='Please use <#533005337482100736>')
+            embed = helpembed()
+            await message.author.send(embed=embed))
         
     if str(message.content).startswith('+warn'):
 
